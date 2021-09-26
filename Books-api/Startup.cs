@@ -46,6 +46,7 @@ namespace Books_api
                 .AllowAnyHeader());
             });
             services.AddAutoMapper(typeof(Maps));
+           
 
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v1",new OpenApiInfo { 
@@ -60,7 +61,7 @@ namespace Books_api
                
             });
             services.AddSingleton<ILoggerService, LoggerService>();
-
+            services.AddScoped<IAuthorRepository, AuthorRepository>();
 
 
             services.AddControllers();
