@@ -41,6 +41,12 @@ namespace Books_api.Services
             return author;
         }
 
+        public async Task<bool> isExits(int ID)
+        {
+            return await _Db.Authors.AnyAsync(a=>a.ID==ID);
+
+        }
+
         public async Task<bool> Save()
         {
             var Changes =await _Db.SaveChangesAsync();

@@ -9,6 +9,7 @@ namespace Books_api.Contracts
     {
         Task<IList<T>> FindAll();
         Task<T> FindByID(int ID);
+        Task<bool> isExits(int ID);
         Task<bool> Create(T entity);
 
         Task<bool> Update(T entity);

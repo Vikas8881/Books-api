@@ -10,7 +10,7 @@ namespace Books_api.Data
         public string ISBN { get; set; }
         public string Summary { get; set; }
         public string image { get; set; }
-        public double? Price { get; set; }
+        public decimal? Price { get; set; }
 
         public int? AuthorID { get; set; }
 

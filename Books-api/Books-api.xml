@@ -15,5 +15,52 @@
             </summary>
             <returns>List of Author's</returns>
         </member>
+        <member name="M:Books_api.Controllers.AuthorsController.Create(Books_api.DTOs.AuthorCreateDTO)">
+            <summary>
+            Creates an Author
+            </summary>
+            <param name="authorDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Books_api.Controllers.AuthorsController.Update(System.Int32,Books_api.DTOs.AuthorUpdateDTO)">
+            <summary>
+            Update an Author
+            </summary>
+            <param name="ID"></param>
+            <param name="authorUpdate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Books_api.Controllers.AuthorsController.Delete(System.Int32)">
+            <summary>
+            Delete the Author
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Books_api.Controllers.BooksController">
+            <summary>
+            Interact with the Books Table
+            </summary>
+        </member>
+        <member name="M:Books_api.Controllers.BooksController.GetBooks">
+            <summary>
+            Get All Books
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Books_api.Controllers.BooksController.Create(Books_api.DTOs.BookCreateDto)">
+            <summary>
+            Creates a New Book
+            </summary>
+            <param name="BookDto"></param>
+            <returns>Book Object</returns>
+        </member>
+        <member name="M:Books_api.Controllers.BooksController.Delete(System.Int32)">
+            <summary>
+            Delete Book
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>
