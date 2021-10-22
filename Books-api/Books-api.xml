@@ -62,5 +62,12 @@
             <param name="ID"></param>
             <returns></returns>
         </member>
+        <member name="M:Books_api.Controllers.UsersController.Login(Books_api.DTOs.UserDTO)">
+            <summary>
+            User Login Endpoint
+            </summary>
+            <param name="userDTO"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>
